@@ -43,7 +43,7 @@ const NavBar = () => {
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
-            to="/home"
+            to="/"
             onClick={()=>setToggle(false)}
           >
             Home
