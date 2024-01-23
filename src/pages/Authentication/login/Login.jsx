@@ -11,7 +11,7 @@ const Login = () => {
   };
 
   return (
-    <div className={`container  mt-20  ${isLoginActive ? "active" : ""}`}>
+    <div className={`contain container mt-20  ${isLoginActive ? "active" : ""}`}>
       <div className="signup-section">
         <header
           onClick={handleSectionToggle}

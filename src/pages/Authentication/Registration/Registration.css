@@ -2,7 +2,7 @@
 
 
 
-.container{
+.contain{
     position: relative;
     width: 460px;
     height: 640px;
@@ -70,7 +70,7 @@
     color: #000;
 }
 
-.container .loginFrom{
+.contain .loginFrom{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -116,22 +116,22 @@
     border: none;
 }
 
-.container.active .login-section{
+.contain.active .login-section{
     bottom: -12%;
     border-radius: 220px;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container.active .login-section .textHeader{
+.contain.active .login-section .textHeader{
     opacity: 1;
 }
 
-.container.active .signup-section .textHeader{
+.contain.active .signup-section .textHeader{
     opacity: 0.6;
 }
 
 @media screen and (max-width: 992px) {
-    .container{
+    .contain{
         width: 360px;
     }
   }
