@@ -1,6 +1,8 @@
 import React from "react";
 
-const LoginBtn = () => {
+import "./LoginBtn.css";
+
+const LoginBtn = ({name}) => {
   return (
     <div>
       <button class="Btn">
@@ -10,7 +12,7 @@ const LoginBtn = () => {
           </svg>
         </div>
 
-        <div class="text">Login</div>
+        <div class="text">{name}</div>
       </button>
     </div>
   );

@@ -4,13 +4,10 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { HiMenuAlt2, HiOutlineLightBulb } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
-
+import LoginBtn from "../Ui/loginBtn/LoginBtn";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
-
-
-
 
   return (
     <motion.nav
@@ -27,7 +24,9 @@ const NavBar = () => {
       </span>
       <div className="flex items-center gap-2">
         <Link to="/">
-          <h1 className="text-3xl font-bold">Connect<span className="text-Primary">Hive</span> </h1>
+          <h1 className="text-3xl font-bold">
+            Connect<span className="text-Primary">Hive</span>{" "}
+          </h1>
         </Link>
       </div>
 
@@ -44,7 +43,7 @@ const NavBar = () => {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/"
-            onClick={()=>setToggle(false)}
+            onClick={() => setToggle(false)}
           >
             Home
           </NavLink>
@@ -53,16 +52,16 @@ const NavBar = () => {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/houses"
-            onClick={()=>setToggle(false)}
+            onClick={() => setToggle(false)}
           >
-           Houses
+            Houses
           </NavLink>
         </li>
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/dashboard"
-            onClick={()=>setToggle(false)}
+            onClick={() => setToggle(false)}
           >
             Dashboard
           </NavLink>
@@ -100,7 +99,11 @@ const NavBar = () => {
         ) : (
           <></>
         )} */}
-
+        <Link to='/login'>
+          <button>
+            <LoginBtn name="login" />
+          </button>
+        </Link>
         {/* <button>
           {isDark ? (
             <HiOutlineLightBulb

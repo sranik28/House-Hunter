@@ -3,6 +3,7 @@ import Root from "../layouts/Root";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import Houses from "../pages/Houses";
+import Login from "../pages/Authentication/login/Login";
 
 const Router = createBrowserRouter([
     {
@@ -16,6 +17,14 @@ const Router = createBrowserRouter([
             {
                 path: "/dashboard",
                 element: <Dashboard/>
+            },
+            {
+                path: "/houses",
+                element: <Houses/>
+            },
+            {
+                path: "/login",
+                element: <Login/>
             },
             {
                 path: "/houses",
