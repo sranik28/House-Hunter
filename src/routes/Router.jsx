@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import Houses from "../pages/Houses";
 import Login from "../pages/Authentication/login/Login";
+import Registration from "../pages/Authentication/Registration/Registration";
 
 const Router = createBrowserRouter([
     {
@@ -27,8 +28,8 @@ const Router = createBrowserRouter([
                 element: <Login/>
             },
             {
-                path: "/houses",
-                element: <Houses/>
+                path: "/registration",
+                element: <Registration/>
             },
         ]
     }

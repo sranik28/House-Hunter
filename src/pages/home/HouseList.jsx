@@ -5,7 +5,7 @@ const HouseList = () => {
   return (
     <div className="mt-20">
         <h1 className="text-center text-5xl font-semibold">House List</h1>
-      <div className="container grid md:grid-cols-3 gap-10 mt-14">
+      <div className="container grid md:grid-cols-3 gap-10 mt-14 justify-center items-center">
         <div class="card-container">
           <div class="card">
             <div class="img-content">
