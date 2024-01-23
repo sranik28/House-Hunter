@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Dashboard = () => {
+const ErrorPage = () => {
     return (
         <div>
-            
+            error
         </div>
     );
 };
 
-export default Dashboard;
+export default ErrorPage;
