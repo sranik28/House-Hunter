@@ -15,7 +15,7 @@ const AuthProvider = ({children}) => {
         return;
       }
 
-      const response = await axios.get('https://house-hunter-server-eight.vercel.app/currentuser', {
+      const response = await axios.get('http://localhost:8888/currentuser', {
         headers: {
           Authorization: token,
         },

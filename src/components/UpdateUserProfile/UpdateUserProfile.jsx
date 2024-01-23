@@ -38,7 +38,7 @@ const navigate = useNavigate()
       };
     //   console.log(upadteProfile);
 
-      axios.put(`https://house-hunter-server-eight.vercel.app/updateprofile/${loadUser._id}`, upadteProfile)
+      axios.put(`http://localhost:8888/updateprofile/${loadUser._id}`, upadteProfile)
       .then(res => {
         if (res.data.modifiedCount > 0) {
             reset();

@@ -9,7 +9,7 @@ const DashboardUser = () => {
   const [userProfile, setUserProfile] = useState({});
 
   useEffect(() => {
-    fetch(`https://house-hunter-server-eight.vercel.app/profile/${user?.email}`)
+    fetch(`http://localhost:8888/profile/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setUserProfile(data);
