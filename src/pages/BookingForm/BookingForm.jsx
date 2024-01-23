@@ -61,7 +61,7 @@ const BookingForm = () => {
                   <input
                     defaultValue={user?.name}
                     readOnly
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("name")}
                   />
                   <p></p>
@@ -73,7 +73,7 @@ const BookingForm = () => {
                   <input
                     defaultValue={user?.email}
                     readOnly
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("email")}
                   />
                 </div>
@@ -83,7 +83,7 @@ const BookingForm = () => {
                   </label>
                   <input
                     type="tel"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register('number', {
                         pattern: /^(?:\+?88)?01[3-9]\d{8}$/,
                         required: 'Please enter a valid Bangladeshi phone number.',
@@ -94,7 +94,7 @@ const BookingForm = () => {
                 </div>
               <button
                 type="submit"
-                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white text-primary hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 Book House
               </button>

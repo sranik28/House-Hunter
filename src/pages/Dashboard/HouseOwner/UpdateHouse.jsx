@@ -57,7 +57,7 @@ const UpdateHouse = () => {
                   <input
                     defaultValue={loadedHouse?.owner_name}
                     readOnly
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("owner_name")}
                     required
                   />
@@ -69,7 +69,7 @@ const UpdateHouse = () => {
                   <input
                     defaultValue={loadedHouse?.owner_email}
                     readOnly
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("owner_email")}
                     required
                   />
@@ -81,7 +81,7 @@ const UpdateHouse = () => {
                   <input
                     type="text"
                     defaultValue={loadedHouse?.house_name}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("house_name")}
                     required
                   />
@@ -93,7 +93,7 @@ const UpdateHouse = () => {
                   <input
                     type="date"
                     defaultValue={loadedHouse?.availability_date}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("availability_date")}
                     required
                   />
@@ -105,7 +105,7 @@ const UpdateHouse = () => {
                   <input
                     type="text"
                     defaultValue={loadedHouse?.room_size}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("room_size")}
                     required
                   />
@@ -116,7 +116,7 @@ const UpdateHouse = () => {
                   <input
                     type="text"
                     defaultValue={loadedHouse?.address}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("address")}
                     required
                   />
@@ -127,7 +127,7 @@ const UpdateHouse = () => {
                   <input
                     type="text"
                     defaultValue={loadedHouse?.city}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("city")}
                     required
                   />
@@ -138,7 +138,7 @@ const UpdateHouse = () => {
                   <input
                     type="number"
                     defaultValue={loadedHouse?.bedrooms }
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("bedrooms")}
                     required
                   />
@@ -149,7 +149,7 @@ const UpdateHouse = () => {
                   <input
                     type="number"
                     defaultValue={loadedHouse?.bathrooms }
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("bathrooms")}
                     required
                   />
@@ -160,7 +160,7 @@ const UpdateHouse = () => {
                   <input
                     type="text"
                     defaultValue={loadedHouse?.phone_number}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register('phone_number', {
                         pattern: /^(?:\+?88)?01[3-9]\d{8}$/,
                         required: 'Please enter a valid Bangladeshi phone number.',
@@ -174,7 +174,7 @@ const UpdateHouse = () => {
                   <input
                     type="number"
                     defaultValue={loadedHouse?.rent_per_month}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("rent_per_month")}required
                   />
                 </div>
@@ -185,7 +185,7 @@ const UpdateHouse = () => {
                   <input
                     type="text"
                     defaultValue={loadedHouse?.picture}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("picture")}
                     required
                   />
@@ -199,14 +199,14 @@ const UpdateHouse = () => {
                   <textarea
                     type="text"
                     defaultValue={loadedHouse?.description}
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("description")}
                     required
                   />
                 </div>
               <button
                 type="submit"
-                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white text-primary hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 Update House
               </button>

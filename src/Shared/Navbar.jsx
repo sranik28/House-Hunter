@@ -128,7 +128,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       isActive
                         ? "text-primary"
-                        : "hover:text-primary ease-in duration-200"
+                        : "text-primary ease-in duration-200"
                     }
                   >
                     Home
@@ -142,7 +142,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-primary"
-                      : "hover:text-primary ease-in duration-200"
+                      : "text-primary ease-in duration-200"
                   }
                 >
                   Dashboard
@@ -169,7 +169,7 @@ const Navbar = () => {
                   <li className="mt-3">
                     <button
                       onClick={handleLogout}
-                      className="bg-green-500 px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"
+                      className="bg-primary px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"
                     >
                       Logout
                     </button>
@@ -177,7 +177,7 @@ const Navbar = () => {
                 ) : (
                   <li className="mt-3">
                     <Link to="/login">
-                      <button className="bg-green-500 px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                      <button className="bg-primary px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
                         Login
                       </button>
                     </Link>

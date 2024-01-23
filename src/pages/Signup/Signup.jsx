@@ -43,7 +43,7 @@ const Signup = () => {
     return (
         <div className="max-w-2xl mx-auto my-10">
       <div className="bg-whote pb-20 pt-10  shadow-md p-20 mt-5">
-        <h3 className="text-4xl text-center my-10 text-green-500 font-semibold">
+        <h3 className="text-4xl text-center my-10 text-primary font-semibold">
           Signup Now
         </h3>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -53,7 +53,7 @@ const Signup = () => {
               </label>
               <input
               type='text'
-                className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                 {...register("name")}
                 required
               />
@@ -64,7 +64,7 @@ const Signup = () => {
               </label>
               <input
               type='email'
-                className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                 {...register("email")}
                 required
               />
@@ -75,7 +75,7 @@ const Signup = () => {
               </label>
               <input
                 type={showPassword ? "text" : "password"}
-                className=" w-full t p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                className=" w-full t p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                 {...register("password")}
                 required
               />
@@ -92,7 +92,7 @@ const Signup = () => {
                 Select Role
               </label>
               <select
-                className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                 {...register("role")}
                 required
               >
@@ -102,13 +102,13 @@ const Signup = () => {
             </div>
           <button
             type="submit"
-            className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+            className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white  bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           >
             Signup
           </button>
         </form>
         <p className="text-center text-red-500 pt-5">{showError && showError}</p>
-        <p className="text-center pt-5 ">Already have an account? <Link className="text-green-500" to="/login">Login</Link></p>
+        <p className="text-center pt-5 ">Already have an account? <Link className="text-primary" to="/login">Login</Link></p>
       
       </div>
     </div>

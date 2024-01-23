@@ -85,7 +85,7 @@ const ManageBooking = () => {
                   <td>
                     {book.status === "approved" ?
                     <button
-                    className="btn btn-ghost btn-xs bg-green-500 text-white"
+                    className="btn btn-ghost btn-xs bg-primary text-white"
                   >
                     Approved
                   </button>

@@ -55,7 +55,7 @@ const AddHouse = () => {
                   <input
                     defaultValue={user?.name}
                     readOnly
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("owner_name")}
                     required
                   />
@@ -67,7 +67,7 @@ const AddHouse = () => {
                   <input
                     defaultValue={user?.email}
                     readOnly
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("owner_email")}
                     required
                   />
@@ -78,7 +78,7 @@ const AddHouse = () => {
                   </label>
                   <input
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("house_name")}
                     required
                   />
@@ -89,7 +89,7 @@ const AddHouse = () => {
                   </label>
                   <input
                     type="date"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("availability_date")}
                     required
                   />
@@ -100,7 +100,7 @@ const AddHouse = () => {
                   </label>
                   <input
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("room_size")}
                     required
                   />
@@ -110,7 +110,7 @@ const AddHouse = () => {
                   Address</label>
                   <input
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("address")}
                     required
                   />
@@ -120,7 +120,7 @@ const AddHouse = () => {
                   City</label>
                   <input
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("city")}
                     required
                   />
@@ -130,7 +130,7 @@ const AddHouse = () => {
                   Bedrooms</label>
                   <input
                     type="number"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("bedrooms")}
                     required
                   />
@@ -140,7 +140,7 @@ const AddHouse = () => {
                   bathrooms</label>
                   <input
                     type="number"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("bathrooms")}
                     required
                   />
@@ -150,7 +150,7 @@ const AddHouse = () => {
                   Phone Number</label>
                   <input
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register('phone_number', {
                         pattern: /^(?:\+?88)?01[3-9]\d{8}$/,
                         required: 'Please enter a valid Bangladeshi phone number.',
@@ -164,7 +164,7 @@ const AddHouse = () => {
                   Rent per month</label>
                   <input
                     type="number"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("rent_per_month")}required
                   />
                 </div>
@@ -174,7 +174,7 @@ const AddHouse = () => {
                   </label>
                   <input
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("picture")}
                     required
                   />
@@ -187,14 +187,14 @@ const AddHouse = () => {
                   </label>
                   <textarea
                     type="text"
-                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-green-500"
+                    className=" w-full  p-2 lg:p-3 rounded-md focus:outline-none my-2 border border-primary"
                     {...register("description")}
                     required
                   />
                 </div>
               <button
                 type="submit"
-                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 Add a House
               </button>
