@@ -17,12 +17,12 @@ const Navbar = () => {
   console.log(isOwner);
 
   return (
-    <div className="sticky top-0 z-30 bg-white">
+    <div className="sticky top-0 z-30 bg-black">
       <div className=" max-w-7xl mx-auto">
         <nav className="lg:px-0 ps-14 pe-5 flex justify-between items-center">
-          <div className="py-5 text-green-500 font-extrabold text-4xl">
+          <div className="py-5  font-extrabold text-white text-4xl">
             <Link to="/">
-              <span className="text-orange-600">House</span>Hunter
+              <span className="text-primary">House</span>Hunter
             </Link>
           </div>
           <div>
@@ -32,8 +32,8 @@ const Navbar = () => {
                   to="/"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-green-600"
-                      : "hover:text-green-600 ease-in duration-200"
+                      ? "text-primary"
+                      : "hover:text-primary ease-in duration-200"
                   }
                 >
                   Home
@@ -50,8 +50,8 @@ const Navbar = () => {
                   }
                   className={({ isActive }) =>
                     isActive
-                      ? "text-green-600"
-                      : "hover:text-green-600 ease-in duration-200"
+                      ? "text-primary"
+                      : "hover:text-primary ease-in duration-200"
                   }
                 >
                   Dashboard
@@ -96,7 +96,7 @@ const Navbar = () => {
                   <li>
                     {" "}
                     <Link to="/login">
-                      <button className="bg-green-500 px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                      <button className="bg-primary text-white px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
                         Login
                       </button>
                     </Link>
@@ -127,8 +127,8 @@ const Navbar = () => {
                     to="/"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-green-600"
-                        : "hover:text-green-600 ease-in duration-200"
+                        ? "text-primary"
+                        : "hover:text-primary ease-in duration-200"
                     }
                   >
                     Home
@@ -141,8 +141,8 @@ const Navbar = () => {
                   to="/dashboard/managehouse"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-green-600"
-                      : "hover:text-green-600 ease-in duration-200"
+                      ? "text-primary"
+                      : "hover:text-primary ease-in duration-200"
                   }
                 >
                   Dashboard
