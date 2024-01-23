@@ -2,8 +2,7 @@ import axios from 'axios';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../../../context/Context';
-
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const AddHouse = () => {
     const {user} = useContext(AuthContext)

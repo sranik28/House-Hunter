@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import useOwner from "../../hooks/useOwner";
+import { AuthContext } from "../../providers/AuthProvider";
 import Logout from "../Logout/Logout";
-import { AuthContext } from "../../context/Context";
 
 const DashboardUser = () => {
   const { user } = useContext(AuthContext);

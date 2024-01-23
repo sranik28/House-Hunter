@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useOwner from "../../hooks/useOwner";
-import { AuthContext } from "../../context/Context";
-
+import { AuthContext } from "../../providers/AuthProvider";
 
 const UserProfile = () => {
   const { user } = useContext(AuthContext);

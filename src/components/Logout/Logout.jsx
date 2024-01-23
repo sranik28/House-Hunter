@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../context/Context';
-
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Logout = () => {
     const {logout} = useContext(AuthContext)

@@ -4,8 +4,7 @@ import React, { useContext } from 'react';
 import { FaPenSquare, FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../../../context/Context';
-
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const ManageHouse = () => {
 const {user, loading} = useContext(AuthContext)

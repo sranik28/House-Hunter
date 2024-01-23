@@ -3,8 +3,7 @@ import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../../context/Context';
-
+import { AuthContext } from '../../providers/AuthProvider';
 
 const BookingForm = () => {
     const loadHouse = useLoaderData()
