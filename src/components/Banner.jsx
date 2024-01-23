@@ -2,12 +2,13 @@ import React from "react";
 import bannerImg from "../assets/banner/pexels-expect-best-323780.jpg";
 import { Link } from "react-router-dom";
 import "./Style/BannerText.css"
+import "./Style/BannerImg.css"
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-full">
-      <img className="w-full h-[90vh] object-cover" src={bannerImg} alt="" />
-      <div className="absolute top-0 left-0 w-full h-full text-white bg-black/60">
+    <div className="relative w-full h-full overflow-hidden">
+      <img className="w-full h-[90vh] object-cover kenburns-top" src={bannerImg} alt="" />
+      <div className="absolute top-0 left-0 md:kenburns-top w-full h-full text-white bg-black/60">
         <div
           className="absolute text-xl text-center  md:top-56
         top-[195px]  font-bold left-2 md:left-[20%] text-focus-in"
