@@ -3,7 +3,8 @@ import axios from 'axios';
 import React, { useContext } from 'react';
 import { FaTrash } from 'react-icons/fa';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../../../providers/AuthProvider';
+import { AuthContext } from '../../../context/Context';
+
 
 const ManageBooking = () => {
     const {user, loading} = useContext(AuthContext)

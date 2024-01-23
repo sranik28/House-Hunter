@@ -2,7 +2,8 @@ import axios from 'axios';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../../../providers/AuthProvider';
+import { AuthContext } from '../../../context/Context';
+
 
 const AddHouse = () => {
     const {user} = useContext(AuthContext)

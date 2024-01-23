@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { Navigate } from "react-router";
 import Loading from "../components/Loading/Loading";
 import useOwner from "../hooks/useOwner";
-import { AuthContext } from "../providers/AuthProvider";
+import { AuthContext } from "../context/Context";
+
 
 const OwnerRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
