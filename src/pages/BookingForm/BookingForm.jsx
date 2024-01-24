@@ -22,7 +22,7 @@ const BookingForm = () => {
         const {address,availability_date,bathrooms,bedrooms, city, house_name, owner_email, owner_name, phone_number, picture, rent_per_month, room_size, _id} = loadHouse;
         const bookHouse = { name, email, number, address,availability_date,bathrooms,bedrooms, city, house_name, owner_email, owner_name, phone_number, picture, rent_per_month, room_size, houseId: _id}
         console.log(bookHouse);
-        axios.post(`http://localhost:8888/mybooking`, bookHouse)
+        axios.post(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/mybooking`, bookHouse)
         .then(res => {
             console.log(res.data);
             if(res.data.insertedId){

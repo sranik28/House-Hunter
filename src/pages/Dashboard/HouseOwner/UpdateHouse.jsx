@@ -24,7 +24,7 @@ const UpdateHouse = () => {
 
         const updateHouse = {address,availability_date,bathrooms,bedrooms, city, house_name, owner_email, owner_name, phone_number, picture, rent_per_month, room_size, description}
 
-        axios.put(`http://localhost:8888/updatehouse/${loadedHouse._id}`, updateHouse)
+        axios.put(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/updatehouse/${loadedHouse._id}`, updateHouse)
         .then(res => {
             if(res.data.modifiedCount > 0){
                 navigate("/dashboard/managehouse")
@@ -206,7 +206,7 @@ const UpdateHouse = () => {
                 </div>
               <button
                 type="submit"
-                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white text-primary hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                className="group my-6 relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 Update House
               </button>

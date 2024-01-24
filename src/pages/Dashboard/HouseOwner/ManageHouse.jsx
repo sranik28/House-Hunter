@@ -13,7 +13,7 @@ const { data: houses = [], refetch } = useQuery({
     queryKey: ["houses"],
     enabled: !loading,
     queryFn: async () => {
-      const response = await axios.get(`http://localhost:8888/ownhouse/${user?.email}`);
+      const response = await axios.get(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/ownhouse/${user?.email}`);
       return response.data;
     },
   });
@@ -30,7 +30,7 @@ const { data: houses = [], refetch } = useQuery({
             confirmButtonText: "Yes, delete it!",
           }).then((result) => {
             if (result.isConfirmed) {
-              axios.delete(`http://localhost:8888/deletehouse/${book._id}`)
+              axios.delete(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/deletehouse/${book._id}`)
               .then(res => {
                 if (res.data.deletedCount > 0) {
                     refetch()

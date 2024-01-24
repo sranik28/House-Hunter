@@ -12,7 +12,7 @@ const ManageBooking = () => {
         queryKey: ["booking"],
         enabled: !loading,
         queryFn: async () => {
-          const response = await axios.get(`http://localhost:8888/mybooking/${user?.email}`);
+          const response = await axios.get(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/mybooking/${user?.email}`);
           return response.data;
         },
       });
@@ -30,7 +30,7 @@ const ManageBooking = () => {
             confirmButtonText: "Yes, delete it!",
           }).then((result) => {
             if (result.isConfirmed) {
-              axios.delete(`http://localhost:8888/booking/${book._id}`)
+              axios.delete(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/booking/${book._id}`)
               .then(res => {
                 if (res.data.deletedCount > 0) {
                     refetch()

@@ -9,7 +9,7 @@ const UserProfile = () => {
   
 
   useEffect(() => {
-    fetch(`http://localhost:8888/profile/${user?.email}`)
+    fetch(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/profile/${user?.email}`)
     .then(res => res.json())
     .then(data => {
       setUserProfile(data)

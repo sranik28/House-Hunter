@@ -24,7 +24,7 @@ const Login = () => {
         const {email, password} = data;
         const loginUser = {email, password}
 
-        axios.post(`http://localhost:8888/login`, loginUser)
+        axios.post(`https://house-hunter-backend-caxj15ubr-sranik28.vercel.app/login`, loginUser)
         .then(res => {
             const token = res.data;
             localStorage.setItem('token', token);
